@@ -24,16 +24,16 @@ desc_temp="""
 def main():
     #st.title("Main App")
     stc.html(html_temp)   
-    menu= ["Home", "EDA", "ML", "About"]
+    menu= ["Home", "FACTS", "ML-PREDICTOR", "About"]
     choice=st.sidebar.selectbox("Menu", menu)
 
     if choice=="Home":
         st.subheader("Home")
         #st.write(desc_temp)
         st.markdown(desc_temp,unsafe_allow_html=True)
-    elif choice=="EDA":
+    elif choice=="FACTS":
         run_eda_app()
-    elif choice=="ML":
+    elif choice=="ML-PREDICTOR":
         run_ml_app()
     else:
         st.subheader("About")
